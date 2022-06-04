@@ -1,0 +1,9 @@
+[default]
+src = "contracts"
+out = "artifacts"
+libs = ["node_modules", "lib"]
+remappings = [
+    "hardhat/=node_modules/hardhat/",
+    "forge-std/=lib/forge-std/src",
+    "@openzeppelin/=node_modules/@openzeppelin/"
+]
