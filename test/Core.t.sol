@@ -22,7 +22,7 @@ contract CoreTest is Test {
     }
 
     function testAddIdentity() external {
-        VM.expectEmit(true, false, false, false, address(core));
+        VM.expectEmit(true, false, false, true, address(core));
         emit ItemIdentity(keccak256(abi.encodePacked(SALE_ID, uint256(0))));
 
         core.addIdentity(SALE_ID, 0, COLLECTOR, SIGNATURE);
